@@ -1,0 +1,42 @@
+.gribouille-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden; /* Pour éviter que Gribouille sorte de l'écran */
+  }
+  
+  .gribouille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out; /* Transition fluide lors du déplacement */
+  }
+  
+  .gribouille-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: pink; /* Couleur barbes à papa */
+    animation: bounce 0.5s ease infinite; /* Animation de rebond */
+  }
+  
+  /* Animation de rebond */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Hauteur du rebond */
+    }
+  }
+  
+  p {
+    font-family: 'Comic Sans MS', cursive;
+    color: #333;
+    margin-top: 10px;
+  }
